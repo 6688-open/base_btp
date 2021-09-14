@@ -24,8 +24,8 @@
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <fastjson.version>1.2.70</fastjson.version>
     </properties>
-    <!---->
 
+    <!--不会引入依赖 只是提供维护版本  子项目添加version 以子项目为准 没有添加version  向上追溯 找到dependencyManagement管理的版本号-->
     <dependencyManagement>
         <dependencies>
             <dependency>
