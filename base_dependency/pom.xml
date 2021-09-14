@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!--<parent>
+        <artifactId>base_btp</artifactId>
+        <groupId>com.dj.boot</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>-->
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.dj.boot</groupId>
+    <artifactId>base_dependency</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>base_dependency</name>
+    <description>统一管理依赖</description>
+
+
+    <properties>
+        <jdk.version>1.6</jdk.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <fastjson.version>1.2.70</fastjson.version>
+    </properties>
+    <!---->
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>1</id>
+            <name>2</name>
+            <url>http</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+</project>
